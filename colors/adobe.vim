@@ -77,6 +77,8 @@ hi DiffAdd      guibg=lightblue
 " Html
 hi htmlItalic ctermfg=220
 hi htmlBold ctermbg=220 cterm=bold
+hi htmlH1 cterm=bold ctermfg=126
+hi markdownHeadingDelimiter cterm=bold
 "hi htmlBoldUnderline gui=underline
 "hi htmlBold     gui=none
 "hi htmlBoldItalic gui=none
