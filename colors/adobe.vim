@@ -75,10 +75,12 @@ hi DiffText     gui=none
 hi DiffAdd      guibg=lightblue
 
 " Html
-hi htmlBoldUnderline gui=underline
-hi htmlBold     gui=none
-hi htmlBoldItalic gui=none
-hi htmlBoldUnderlineItalic gui=underline
+hi htmlItalic ctermfg=220
+hi htmlBold ctermbg=220 cterm=bold
+"hi htmlBoldUnderline gui=underline
+"hi htmlBold     gui=none
+"hi htmlBoldItalic gui=none
+"hi htmlBoldUnderlineItalic gui=underline
 
 " Comments
 hi Comment      guifg=#808080 ctermfg=244
@@ -203,3 +205,7 @@ hi moinRule       ctermfg=13
 hi moinComment    ctermfg=23
 hi moinPragma     ctermfg=253
 hi moinInterLink  ctermfg=1
+
+" Markdown
+
+hi def link markdownCodeBlock String
