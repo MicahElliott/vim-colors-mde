@@ -104,7 +104,7 @@ hi pythonRestIdentifier guifg=#9e9e9e ctermfg=247
 " General Programming
 hi Statement    guifg=orange4 gui=none ctermfg=brown
 hi Type         guifg=#878700 gui=none cterm=bold ctermfg=100
-hi String       guifg=#000087 ctermfg=18
+hi String       guifg=#000087 ctermfg=18  " torn on making this 19 to brighten up
 hi PreProc      guifg=#d7ff87 ctermfg=192
 hi Special      guifg=#875faf ctermfg=97
 hi Constant     guifg=#af0000 ctermfg=124
@@ -209,5 +209,11 @@ hi moinPragma     ctermfg=253
 hi moinInterLink  ctermfg=1
 
 " Markdown
-
+" Missing from tpope's syntax file.
 hi def link markdownCodeBlock String
+hi def link markdownCode      String
+
+" Diff
+hi diffRemoved ctermfg=124 cterm=bold
+hi diffAdded   ctermfg=22 cterm=bold
+hi gitcommitBranch ctermfg=159 ctermbg=06 cterm=bold
