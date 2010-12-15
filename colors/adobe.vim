@@ -49,7 +49,7 @@ hi CursorColumn guibg=#A2955F ctermbg=143
 hi CursorLine   guibg=#A2955F
 
 " Search
-hi Search       guibg=green ctermfg=201 ctermbg=154
+hi Search       guibg=green ctermfg=22 ctermbg=226
 
 " Fold
 hi Folded       guibg=#a0a087
@@ -217,3 +217,7 @@ hi def link markdownCode      String
 hi diffRemoved ctermfg=124 cterm=bold
 hi diffAdded   ctermfg=22 cterm=bold
 hi gitcommitBranch ctermfg=159 ctermbg=06 cterm=bold
+
+" Selection Menu.
+hi Pmenu ctermfg=white ctermbg=251
+hi PmenuSel ctermfg=28 ctermbg=118 cterm=bold
