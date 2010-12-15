@@ -105,7 +105,7 @@ hi pythonRestIdentifier guifg=#9e9e9e ctermfg=247
 hi Statement    guifg=orange4 gui=none ctermfg=brown
 hi Type         guifg=#878700 gui=none cterm=bold ctermfg=100
 hi String       guifg=#000087 ctermfg=18  " torn on making this 19 to brighten up
-hi PreProc      guifg=#d7ff87 ctermfg=192
+hi PreProc      guifg=#d7ff87 ctermfg=191
 hi Special      guifg=#875faf ctermfg=97
 hi Constant     guifg=#af0000 ctermfg=124
 hi Identifier   guifg=#0000af ctermfg=19
@@ -113,7 +113,7 @@ hi Function     guifg=#afd7ff gui=bold cterm=bold ctermfg=153
 hi Underlined   guifg=#d7ff87 ctermfg=192
 hi Conditional  guifg=#0087ff ctermfg=33
 hi Repeat       guifg=#00af00 ctermfg=34
-hi Operator     guifg=#afff5f ctermfg=155
+hi Operator     guifg=#afff5f ctermfg=118
 hi Include      guifg=#af8700 ctermfg=136
 "hi Keyword      guifg=yellow guibg=blue ctermfg=yellow
 "hi Exception    guifg=yellow ctermfg=yellow
