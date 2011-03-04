@@ -88,7 +88,7 @@ hi markdownHeadingDelimiter cterm=bold
 hi Comment      guifg=#808080 ctermfg=244
 "hi Comment  cterm=bold ctermfg=0
 hi pythonCommentedCode      guifg=#800000 ctermfg=1
-hi pythonKingComment      guifg=#dadada ctermfg=253
+hi pythonKingComment      guifg=#dadada ctermfg=253 cterm=bold
 hi pythonSmartComment      guifg=#af8787 ctermfg=138
 hi pythonJavadoc      guifg=#d7d7af ctermfg=187
 hi pythonEpydoc      guifg=#d7d7af ctermfg=187
@@ -100,6 +100,9 @@ hi pythonEolComment      guifg=#000080 ctermfg=blue
 hi pythonTripleDirkString       guifg=#005f5f ctermfg=23
 hi pythonTripleTickString guifg=#9e9e9e ctermfg=247
 hi pythonRestIdentifier guifg=#9e9e9e ctermfg=247
+hi pythonRun ctermfg=124 cterm=bold
+
+"hi pythonTripleDirkString ctermfg=20 cterm=italic
 
 " General Programming
 hi Statement    guifg=orange4 gui=none ctermfg=brown
@@ -219,5 +222,10 @@ hi diffAdded   ctermfg=22 cterm=bold
 hi gitcommitBranch ctermfg=159 ctermbg=06 cterm=bold
 
 " Selection Menu.
+" Select item is bold and bright green to be super-obvious.
 hi Pmenu ctermfg=white ctermbg=251
 hi PmenuSel ctermfg=28 ctermbg=118 cterm=bold
+
+"hi TabLine cterm=underline ctermfg=15 ctermbg=242
+hi TabLine cterm=underline ctermfg=242 ctermbg=238
+hi TabLineSel cterm=bold ctermfg=28
