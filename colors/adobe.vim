@@ -87,22 +87,30 @@ hi markdownHeadingDelimiter cterm=bold
 " Comments
 hi Comment      guifg=#808080 ctermfg=244
 "hi Comment  cterm=bold ctermfg=0
-hi pythonCommentedCode      guifg=#800000 ctermfg=1
-hi pythonKingComment      guifg=#dadada ctermfg=253 cterm=bold
-hi pythonSmartComment      guifg=#af8787 ctermfg=138
-hi pythonJavadoc      guifg=#d7d7af ctermfg=187
-hi pythonEpydoc      guifg=#d7d7af ctermfg=187
-hi pythonMajorSection      guifg=white ctermfg=white
-hi pythonMinorSection      guifg=white ctermfg=white
-hi pythonInfoComment      guifg=#ffafaf ctermfg=217
-hi pythonDisabledComment  guifg=#9e9e9e  ctermfg=247
-hi pythonEolComment      guifg=#000080 ctermfg=blue
-hi pythonTripleDirkString       guifg=#005f5f ctermfg=23
-hi pythonTripleTickString guifg=#9e9e9e ctermfg=247
-hi pythonRestIdentifier guifg=#9e9e9e ctermfg=247
-hi pythonRun ctermfg=124 cterm=bold
 
-"hi pythonTripleDirkString ctermfg=20 cterm=italic
+" Special comments. See ~/.vim/ftplugin/comments.vim
+hi CommentCode             guifg=#800000 ctermfg=1
+hi CommentDescription      guifg=#8787ff ctermfg=105 cterm=bold
+hi CommentKing             guifg=#dadada ctermfg=253 cterm=bold
+hi CommentSmart            guifg=#af8787 ctermfg=138
+hi CommentJavadoc          guifg=#d7d7af ctermfg=187
+hi CommentEpydoc           guifg=#d7d7af ctermfg=187
+hi CommentMajorSection     guifg=#ffffff ctermfg=15 cterm=bold
+hi CommentMiddleSection    guifg=#eeeeee ctermfg=255
+hi CommentMinorSection     guifg=#dadada ctermfg=253
+hi CommentInfo             guifg=#87d700 ctermfg=112 cterm=bold
+hi CommentDisabled         guifg=#9e9e9e  ctermfg=247
+hi CommentEol              guifg=#000080 ctermfg=blue
+hi CommentTripleDirkString guifg=#005f5f ctermfg=23
+hi CommentTripleTickString guifg=#9e9e9e ctermfg=247
+hi CommentRestIdentifier   guifg=#9e9e9e ctermfg=247
+hi CommentRun              ctermfg=124 cterm=bold
+
+" Python comment extensions.
+hi def link pythonTripleDirkString   CommentTripleDirkString
+hi def link pythonTripleTickString   CommentTripleTickString
+hi def link pythonRestIdentifier     CommentRestIdentifier
+
 
 " General Programming
 hi Statement    guifg=orange4 gui=none ctermfg=brown
@@ -229,3 +237,43 @@ hi PmenuSel ctermfg=28 ctermbg=118 cterm=bold
 "hi TabLine cterm=underline ctermfg=15 ctermbg=242
 hi TabLine cterm=underline ctermfg=242 ctermbg=238
 hi TabLineSel cterm=bold ctermfg=28
+
+hi def link zshVariable Identifier
+hi def link zshFunction Function
+hi def link zshOperator Operator
+" Not doing anything.
+hi zshParentheses cterm=bold ctermfg=red
+hi zshBrackets cterm=bold ctermfg=red
+"zshTodo        xxx links to Todo
+"zshComment     xxx links to Comment
+"zshPreProc     xxx links to PreProc
+"zshQuoted      xxx links to SpecialChar
+"zshStringDelimiter xxx links to zshString
+"zshString      xxx links to String
+"zshPOSIXString xxx links to zshString
+"zshJobSpec     xxx links to Special
+"zshPrecommand  xxx links to Special
+"zshDelimiter   xxx links to Keyword
+"zshConditional xxx links to Conditional
+"zshRepeat      xxx links to Repeat
+"zshException   xxx links to Exception
+"zshKeyword     xxx links to Keyword
+"zshRedir       xxx links to Operator
+"zshHereDoc     xxx links to String
+"zshVariableDef xxx links to zshVariable
+"zshShortDeref  xxx links to zshDereferencing
+"zshLongDeref   xxx links to zshDereferencing
+"zshDeref       xxx links to zshDereferencing
+"zshCommands    xxx links to Keyword
+"zshTypes       xxx links to Type
+"zshNumber      xxx links to Number
+"zshSubst       xxx links to PreProc
+"zshOldSubst    xxx links to zshSubst
+"zshMathSubst   xxx links to zshSubst
+"zshSubstDelim  xxx links to zshSubst
+"zshParentheses xxx cleared
+"zshHereDocSync xxx cleared
+"zshHereDocEndSync xxx cleared
+"zshDereferencing xxx links to PreProc
+"zshSwitches    xxx links to Special
+
