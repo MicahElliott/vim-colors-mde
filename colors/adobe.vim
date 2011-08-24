@@ -26,17 +26,16 @@
 "
 " NOTE: Set your terminal background color to: #B0B087, OR see Normal below
 
-set background=dark
+"set background=dark
 hi clear
 if exists("syntax_on")
    syntax reset
 endif
 let g:colors_name = "adobe"
 
-hi ExtraWhitespace ctermbg=9 guibg=red
+hi ExtraWhitespace ctermbg=9 guibg=blue
 
-hi Normal guibg=#afaf87 ctermbg=144 ctermfg=black
-"hi Normal guibg=#afaf87 ctermbg=NONE
+"hi Normal guibg=#afaf87 ctermbg=144 ctermfg=black
 " This scheme is tuned for light backgrounds, particularly 144 (brown),
 " but others can work...
 " Other good “Normal” background colors: 144 (brown), 179 (orange), 180
@@ -45,7 +44,8 @@ hi Normal guibg=#afaf87 ctermbg=144 ctermfg=black
 " Cursor
 hi Cursor       guibg=Yellow guifg=NONE ctermfg=white ctermbg=yellow
 "hi Cursor  cterm=bold ctermfg=0 ctermbg=0
-hi CursorColumn guibg=#A2955F ctermbg=143
+"hi CursorColumn guibg=#A2955F ctermbg=143
+hi CursorColumn guibg=NONE ctermbg=NONE
 hi CursorLine   guibg=#A2955F
 
 " Search
@@ -115,7 +115,7 @@ hi def link pythonRestIdentifier     CommentRestIdentifier
 " General Programming
 hi Statement    guifg=orange4 gui=none ctermfg=brown
 hi Type         guifg=#878700 gui=none cterm=bold ctermfg=100
-hi String       guifg=#000087 ctermfg=18  " torn on making this 19 to brighten up
+hi String       guifg=#000087 ctermfg=22 cterm=italic " torn on making this 19 to brighten up
 hi PreProc      guifg=#d7ff87 ctermfg=191
 hi Special      guifg=#875faf ctermfg=97
 hi Constant     guifg=#af0000 ctermfg=124
@@ -221,8 +221,8 @@ hi moinInterLink  ctermfg=1
 
 " Markdown
 " Missing from tpope's syntax file.
-hi def link markdownCodeBlock String
-hi def link markdownCode      String
+"hi def link markdownCodeBlock String
+"hi def link markdownCode      String
 
 " Diff
 hi diffRemoved ctermfg=124 cterm=bold
