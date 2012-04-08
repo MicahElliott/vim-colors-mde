@@ -11,3 +11,6 @@ hi Function cterm=bold
 " Standout search: red on yellow
 hi Search ctermfg=196 ctermbg=226
 hi Title cterm=bold
+
+" Override for dull.
+hi MatchParen ctermbg=237
