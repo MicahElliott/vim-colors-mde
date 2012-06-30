@@ -14,3 +14,6 @@ hi Title cterm=bold
 
 " Override for dull.
 hi MatchParen ctermbg=237
+
+" Brighten up visual mode.
+hi Visual ctermbg=238
