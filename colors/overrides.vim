@@ -17,3 +17,9 @@ hi MatchParen ctermbg=237
 
 " Brighten up visual mode.
 hi Visual ctermbg=238
+
+" EOL column marker
+hi ColorColumn ctermbg=232
+
+" Rainbow-parenthesis
+hi level16c ctermfg=red cterm=bold
