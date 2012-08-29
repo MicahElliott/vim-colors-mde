@@ -4,7 +4,7 @@
 " See http://micahelliott.com/2008/12/many-types-of-code-comments/ for
 " details.
 
-"echo "in syntax/comments.vim" | sleep 1
+echo "in syntax/comments.vim" | sleep 1
 
 syn match CommentCode         "\s*##\w.*$"    display
 syn match CommentKing         "\s*### .*$"    display
@@ -19,5 +19,7 @@ syn match CommentEpydoc       ".* \+:\w\+:.*"  display
 syn match CommentRun          "\%^#!.*$"
 syn match CommentDescription  "# [[:alpha:]-]\+ — \w.*$"    display
 "syn region  CommentEol        start="\w.* \+# \w.*$" end="$" display excludenl
+
+syn match ExtraWhitespace /\s\+$/
 
 "echo "done with syntax/comments.vim" | sleep 1
